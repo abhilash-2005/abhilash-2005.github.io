@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corrected Page</title>
+    <title>Seemanta Engineering College</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1> hello World</h1>
+    <header>
+        <h1>Seemanta Engineering College</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Welcome to Seemanta Engineering College</h2>
+            <p>Committed to excellence in education and research.</p>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Seemanta Engineering College is a premier institution offering quality education in various engineering disciplines.</p>
+        </section>
+        <section id="courses">
+            <h2>Our Courses</h2>
+            <ul>
+                <li>Computer Science Engineering</li>
+                <li>Electronics and Communication Engineering</li>
+                <li>Mechanical Engineering</li>
+                <li>Civil Engineering</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message"></textarea><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Seemanta Engineering College. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>

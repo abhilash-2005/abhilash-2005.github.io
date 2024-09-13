@@ -1,4 +1,4 @@
-document.querySelector('form').addEventListener('submit', function(event) {
+document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault();
-    alert('Form submitted!');
+    alert('Thank you for your message!');
 });

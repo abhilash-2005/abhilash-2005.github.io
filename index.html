@@ -3,55 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seemanta Engineering College</title>
+    <title>Terms and Conditions</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Seemanta Engineering College</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h2>Welcome to Seemanta Engineering College</h2>
-            <p>Committed to excellence in education and research.</p>
+    <main class="container">
+        <h1>Terms and Conditions</h1>
+        <section class="terms" id="termsContent">
+            <article>
+                <h2>1. Personal Data Privacy</h2>
+                <p>We are committed to protecting your personal information. Any personal data you provide will be handled in accordance with applicable privacy laws and will never be shared, sold, or disclosed to third parties without your consent, except as required by law.</p>
+                <p>Our data practices comply with the <span class="highlight">Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011</span> under Indian IT laws, as well as international frameworks like the <span class="highlight">General Data Protection Regulation (GDPR)</span> for users in the European Union.</p>
+            </article>
+            <article>
+                <h2>2. Compliance with IT Rules and Government Regulations</h2>
+                <p>By using our services, you agree to abide by relevant Indian laws, including the <span class="highlight">Information Technology Act, 2000</span>, which governs the use of electronic data and transactions in India.</p>
+                <p>Users accessing our services globally must ensure compliance with international laws, such as the <span class="highlight">California Consumer Privacy Act (CCPA)</span>, <span class="highlight">Digital Millennium Copyright Act (DMCA)</span>, and the <span class="highlight">GDPR</span> for data protection.</p>
+            </article>
+            <article>
+                <h2>3. Use at Your Own Risk</h2>
+                <p>The content and recommendations we provide are for general informational purposes only. We make reasonable efforts to ensure accuracy but cannot guarantee that the information is complete, error-free, or up-to-date.</p>
+            </article>
+            <article>
+                <h2>4. Liability Disclaimer</h2>
+                <p>We are not liable for any harm, injury, or damage—whether physical, financial, emotional, or otherwise—resulting from the use of our services. This includes unforeseen events such as data breaches or service interruptions.</p>
+            </article>
+            <article>
+                <h2>5. Service Availability and Technical Disruptions</h2>
+                <p>We strive to provide uninterrupted access to our services; however, downtime may occur due to maintenance, technical issues, or force majeure events.</p>
+            </article>
+            <article>
+                <h2>6. User Conduct and Legal Compliance</h2>
+                <p>Users are required to follow all applicable laws and regulations, including but not limited to the <span class="highlight">Indian Penal Code (IPC)</span> provisions for online behavior and international standards like <span class="highlight">anti-spam laws</span> and <span class="highlight">intellectual property laws</span>.</p>
+            </article>
+            <article>
+                <h2>7. Intellectual Property and Copyrights</h2>
+                <p>All content on our platform is protected under the <span class="highlight">Indian Copyright Act, 1957</span> and international copyright laws. Unauthorized reproduction or misuse is strictly prohibited.</p>
+            </article>
+            <article>
+                <h2>8. Changes to Terms and Conditions</h2>
+                <p>We reserve the right to update or amend these terms at any time without prior notice. Continued use of our services after changes are made implies acceptance of the updated terms.</p>
+            </article>
+            <article>
+                <h2>9. Indemnification</h2>
+                <p>You agree to indemnify and hold us harmless from any claims, damages, or liabilities arising from your misuse of our services, breach of these terms, or violation of any applicable law.</p>
+            </article>
+            <article>
+                <h2>10. Governing Law and Dispute Resolution</h2>
+                <p>These terms are governed by the <span class="highlight">laws of India</span>. In the event of disputes, users agree to submit to the exclusive jurisdiction of courts located in <span class="highlight">[insert jurisdiction, e.g., Delhi, India]</span>.</p>
+            </article>
         </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>Seemanta Engineering College is a premier institution offering quality education in various engineering disciplines.</p>
-        </section>
-        <section id="courses">
-            <h2>Our Courses</h2>
-            <ul>
-                <li>Computer Science Engineering</li>
-                <li>Electronics and Communication Engineering</li>
-                <li>Mechanical Engineering</li>
-                <li>Civil Engineering</li>
-            </ul>
-        </section>
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form id="contactForm">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name"><br>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email"><br>
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message"></textarea><br>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
+        <button onclick="acceptTerms()">Accept Terms</button>
+        <button onclick="declineTerms()">Decline Terms</button>
     </main>
-    <footer>
-        <p>&copy; 2024 Seemanta Engineering College. All rights reserved.</p>
-    </footer>
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

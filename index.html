@@ -3,57 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms and Conditions</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Valentine's Special for Ranjita</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(45deg, #ff007f, #ff1493);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(0,0,0,0.5);
+        }
+
+        button {
+            padding: 15px 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        #yesBtn {
+            background: #4CAF50;
+            color: white;
+        }
+
+        #noBtn {
+            background: #f44336;
+            color: white;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .heart {
+            font-size: 100px;
+            animation: pulse 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        #successPage {
+            text-align: center;
+        }
+
+        #successPage img {
+            width: 300px;
+            border-radius: 15px;
+            margin: 20px;
+            border: 5px solid white;
+        }
+
+        #sadPage {
+            background: linear-gradient(45deg, #2c3e50, #34495e);
+        }
+    </style>
 </head>
 <body>
-    <main class="container">
-        <h1>Terms and Conditions</h1>
-        <section class="terms" id="termsContent">
-            <article>
-                <h2>1. Personal Data Privacy</h2>
-                <p>We are committed to protecting your personal information. Any personal data you provide will be handled in accordance with applicable privacy laws and will never be shared, sold, or disclosed to third parties without your consent, except as required by law.</p>
-                <p>Our data practices comply with the <span class="highlight">Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011</span> under Indian IT laws, as well as international frameworks like the <span class="highlight">General Data Protection Regulation (GDPR)</span> for users in the European Union.</p>
-            </article>
-            <article>
-                <h2>2. Compliance with IT Rules and Government Regulations</h2>
-                <p>By using our services, you agree to abide by relevant Indian laws, including the <span class="highlight">Information Technology Act, 2000</span>, which governs the use of electronic data and transactions in India.</p>
-                <p>Users accessing our services globally must ensure compliance with international laws, such as the <span class="highlight">California Consumer Privacy Act (CCPA)</span>, <span class="highlight">Digital Millennium Copyright Act (DMCA)</span>, and the <span class="highlight">GDPR</span> for data protection.</p>
-            </article>
-            <article>
-                <h2>3. Use at Your Own Risk</h2>
-                <p>The content and recommendations we provide are for general informational purposes only. We make reasonable efforts to ensure accuracy but cannot guarantee that the information is complete, error-free, or up-to-date.</p>
-            </article>
-            <article>
-                <h2>4. Liability Disclaimer</h2>
-                <p>We are not liable for any harm, injury, or damage—whether physical, financial, emotional, or otherwise—resulting from the use of our services. This includes unforeseen events such as data breaches or service interruptions.</p>
-            </article>
-            <article>
-                <h2>5. Service Availability and Technical Disruptions</h2>
-                <p>We strive to provide uninterrupted access to our services; however, downtime may occur due to maintenance, technical issues, or force majeure events.</p>
-            </article>
-            <article>
-                <h2>6. User Conduct and Legal Compliance</h2>
-                <p>Users are required to follow all applicable laws and regulations, including but not limited to the <span class="highlight">Indian Penal Code (IPC)</span> provisions for online behavior and international standards like <span class="highlight">anti-spam laws</span> and <span class="highlight">intellectual property laws</span>.</p>
-            </article>
-            <article>
-                <h2>7. Intellectual Property and Copyrights</h2>
-                <p>All content on our platform is protected under the <span class="highlight">Indian Copyright Act, 1957</span> and international copyright laws. Unauthorized reproduction or misuse is strictly prohibited.</p>
-            </article>
-            <article>
-                <h2>8. Changes to Terms and Conditions</h2>
-                <p>We reserve the right to update or amend these terms at any time without prior notice. Continued use of our services after changes are made implies acceptance of the updated terms.</p>
-            </article>
-            <article>
-                <h2>9. Indemnification</h2>
-                <p>You agree to indemnify and hold us harmless from any claims, damages, or liabilities arising from your misuse of our services, breach of these terms, or violation of any applicable law.</p>
-            </article>
-            <article>
-                <h2>10. Governing Law and Dispute Resolution</h2>
-                <p>These terms are governed by the <span class="highlight">laws of India</span>. In the event of disputes, users agree to submit to the exclusive jurisdiction of courts located in <span class="highlight">[insert jurisdiction, e.g., Delhi, India]</span>.</p>
-            </article>
-        </section>
-    </main>
-    <script src="script.js"></script>
+    <div class="container" id="mainPage">
+        <h1>💖 Happy Valentine's Day, Ranjita! 💖</h1>
+        <div class="heart">❤️</div>
+        <p>You make every moment magical. Will you be my Valentine?</p>
+        
+        <button id="yesBtn">Yes, Absolutely! 😍</button>
+        <button id="noBtn" onmouseover="moveButton()">Umm... 😅</button>
+    </div>
+
+    <div class="container hidden" id="successPage">
+        <h2>Yay! You've made me the happiest person! 🥰</h2>
+        <img src="ranjita-pic.jpg" alt="Beautiful Ranjita">
+        <p>Let's make beautiful memories together! 💑</p>
+        <audio id="loveSong" autoplay loop>
+            <source src="love-song.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <div class="container hidden" id="sadPage">
+        <h2>😔 My Heart is Breaking...</h2>
+        <p>But I still want you in my life as my best friend ❤️</p>
+        <div class="heart">💔</div>
+        <p>Can we at least stay close friends?</p>
+        <button onclick="location.reload()">Let's Be Friends 🤝</button>
+    </div>
+
+    <script>
+        const mainPage = document.getElementById('mainPage');
+        const successPage = document.getElementById('successPage');
+        const sadPage = document.getElementById('sadPage');
+        const noBtn = document.getElementById('noBtn');
+
+        document.getElementById('yesBtn').addEventListener('click', () => {
+            mainPage.classList.add('hidden');
+            successPage.classList.remove('hidden');
+        });
+
+        noBtn.addEventListener('click', () => {
+            mainPage.classList.add('hidden');
+            sadPage.classList.remove('hidden');
+        });
+
+        function moveButton() {
+            const x = Math.random() * (window.innerWidth - 100);
+            const y = Math.random() * (window.innerHeight - 50);
+            noBtn.style.position = 'absolute';
+            noBtn.style.left = x + 'px';
+            noBtn.style.top = y + 'px';
+        }
+    </script>
 </body>
 </html>
